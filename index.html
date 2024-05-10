@@ -9,12 +9,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="./dist/css/index.css"></link>
-
-  <title>Document</title>
+  <title>WEBWOK</title>
 </head>
 <body>
   <div class="overflow-wrapper">
-    <section id="home" class="home">
+    <section class="home">
       <div id="pt" class="home__canvas">
         <canvas id="canvas" width="1186" height="977" style="width: 949px; height: 782px;"></canvas>
       </div>
@@ -24,13 +23,13 @@
           <br>
           I'm a front-end web developer.
         </div>
-        <div class="home__main-button page-link" dest="about">
+        <div id="home" class="home__main-button page-link" dest="about">
           View my work 
           <span class="material-symbols-outlined">
             arrow_forward
           </span>
         </div>
-        <div class="home__link-wrap">
+        <nav id="nav" class="home__link-wrap">
           <ul class="home__nav flex desk">
               <li class="page-link active" dest="home">home</li>
               <li class="page-link" dest="about">about</li>
@@ -38,16 +37,169 @@
               <li class="page-link" dest="blog">blog</li>
               <li class="page-link" dest="contact">contact</li>
           </ul>
+      </nav>
       </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <div id="about" class="header waypoint" data-animation="slide-in-left">
+          ABOUT
+        </div>
+        <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s" ></div>
+
+        <div class="flex row label-wrap">
+            <div class="flex bullet-wrap ">
+              <div class="hex-wrap waypoint animated flip-in-x" data-animation="flip-in-x">
+                <div class="hexagon">
+                  <span class="material-symbols-outlined">
+                    speed
+                  </span>
+                </div>
+              </div>
+              <div class="waypoint" data-animation="fade-in">
+                <div class="hexagon-label label bold">Fast</div>
+                <div>
+                  Fast load times and lag free interaction, my highest
+                  priority.
+                </div>
+              </div>
+            </div>
+
+            <div class="flex bullet-wrap ">
+              <div class="hex-wrap waypoint animated flip-in-x" data-animation="flip-in-x" data-delay=".2s" style="animation-delay: 0.2s;">
+                <div class="hexagon">
+                  <span class="material-symbols-outlined">
+                    devices
+                  </span>
+                </div>
+              </div>
+              <div class="waypoint" data-animation="fade-in" data-delay=".2s" style="animation-delay: 0.2s;">
+                <div class="hexagon-label label bold">Responsive</div>
+                <div>My layouts will work on any device, big or small.</div>
+              </div>
+            </div>
+            <div class="flex bullet-wrap ">
+              <div class="hex-wrap waypoint animated flip-in-x" data-animation="flip-in-x" data-delay=".4s" style="animation-delay: 0.4s;">
+                <div class="hexagon">
+                  <span class="material-symbols-outlined">
+                    lightbulb
+                  </span>
+                </div>
+              </div>
+              <div class="waypoint" data-animation="fade-in" data-delay=".4s" style="animation-delay: 0.4s;">
+                <div class="hexagon-label label bold">Intuitive</div>
+                <div>Strong preference for easy to use, intuitive UX/UI.</div>
+              </div>
+            </div>
+
+            <div class="flex bullet-wrap ">
+              <div class="hex-wrap waypoint animated flip-in-x" data-animation="flip-in-x" data-delay=".6s" style="animation-delay: 0.6s;">
+                <div class="hexagon">
+                  <span class="material-symbols-outlined">
+                    rocket_launch
+                  </span>
+                </div>
+              </div>
+              <div class="waypoint" data-animation="fade-in" data-delay=".6s" style="animation-delay: 0.6s;">
+                <div class="hexagon-label label bold">Dynamic</div>
+                <div>
+                  Websites don't have to be static, I love making pages come
+                  to life.
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="skills-wrapper flex row-gt-sm">
+          <div class="skills flex flex-50-gt-sm waypoint" data-animation="slide-in-left">
+            <img src="img/myPhotoFromLinkedin.webp" class="me">
+            <div class="skills__label label bold">Who's this guy?</div>
+            <div class="skills__description">
+              I'm a Front-End Developer for
+              <a class="highlight" href="http://www.chownow.com" target="_blank">ChowNow</a>
+              in Los Angeles, CA.
+              <br>
+              I have serious passion for UI effects, animations and creating
+              intuitive, dynamic user experiences.
+              <br>
+              <span class="page-link highlight" dest="contact">Let's make something special.</span>
+            </div>
+          </div>
+
+          <div class="skills flex flex-50-gt-sm waypoint bars-wrap" data-animation="slide-in-right">
+            <div class="bar flex">
+              <div class="bar fill" style="width:100%">
+                <div class="tag bold flex">CSS</div>
+              </div>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:100%">
+                <div class="tag bold flex">HTML</div>
+              </div>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:90%">
+                <div class="tag bold flex">React</div>
+              </div>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:90%">
+                <div class="tag bold flex">JavaScript</div>
+              </div>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:90%">
+                <div class="tag bold flex">NextJS</div>
+              </div>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:65%">
+                <div class="tag bold flex">Node.js</div>
+              </div>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:65%">
+                <div class="tag bold flex">Ruby/Rails</div>
+              </div>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:50%">
+                <div class="tag bold flex">Python</div>
+              </div>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:50%">
+                <div class="tag bold flex">Figma</div>
+              </div>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:50%">
+                <div class="tag bold flex">Illustrator</div>
+              </div>
+            </div>
+          </div>
+        </div> 
       </div>
     </section>
   </div>
-  <!-- <script src="./js/libraries/jquery.min.js"></script> -->
-  <script
+  <script src="./js/libraries/jquery.min.js"></script>
+  <!-- <script
     src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
     crossorigin="anonymous">
-  </script>
+  </script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script> -->
+  <!-- <script src="./js//libraries/waypoints.min.js"></script> -->
+  <script src="./js/libraries/noframework.waypoints.min.js"></script>
   <script src="./js/libraries/pt.min.js"></script>
   <script src="./js/index.js"></script>
   <script src="./js/canvas.js"></script>

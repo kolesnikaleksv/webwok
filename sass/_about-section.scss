@@ -1,0 +1,269 @@
+.about {
+  // .animated.slide-in-left {
+  //   animation: slideInLeft 0.75s ease both;
+  // }
+  // .waypoint {
+  //   // opacity: 0;
+  // }
+  color: #616161;
+
+  .header {
+    color: #444649;
+    font-weight: 600;
+    font-size: 32px;
+    position: relative;
+    position: relative;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 48px;
+    }
+  }
+
+  .header-bar {
+    background: #444649;
+    height: 4px;
+    margin: 25px 0 75px 0;
+    width: 70px;
+
+    @media screen and (min-width: $tablet) {
+      margin: 25px 0 100px 0;
+    }
+  }
+  .label-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 25px;
+  }
+  .bullet-wrap {
+    margin: 0 15px;
+    padding: 0 10px;
+    width: 40%;
+    text-align: center;
+
+    .hexagon-label {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 20px 0 10px;
+
+      @media screen and (min-width: $mobile) {
+        font-size: 24px;
+      }
+    }
+    @media screen and (min-width: $tablet) {
+      width: 21%;
+    }
+  }
+  .hex-wrap {
+    height: 80px;
+    width: 80px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+
+    .hexagon {
+      background-color: #04c2c9;
+      display: inline-block;
+      height: 100%;
+      width: 57.735%;
+
+      span {
+        color: #fff;
+        font-size: 40px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 20px;
+        z-index: 1;
+
+        @media screen and (min-width: $mobile) {
+          font-size: 60px;
+        }
+      }
+    }
+    .hexagon::before {
+      background-color: inherit;
+      content: "";
+      height: inherit;
+      position: absolute;
+      right: 21.1325%;
+      top: 0;
+      transform: rotateZ(60deg);
+      width: inherit;
+    }
+    .hexagon::after {
+      background-color: inherit;
+      content: "";
+      height: inherit;
+      position: absolute;
+      right: 21.1325%;
+      top: 0;
+      transform: rotateZ(-60deg);
+      width: inherit;
+    }
+
+    @media screen and (min-width: $mobile) {
+      height: 100px;
+      width: 100px;
+    }
+  }
+
+  .skills-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 100%;
+
+    .skills {
+      margin: 0;
+      flex: 1 1 50%;
+      max-height: 100%;
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__label {
+        margin: 20px 0 15px 0;
+        font-weight: 500;
+        font-size: 24px;
+      }
+
+      &__description {
+        text-align: center;
+        font-size: 12px;
+
+        span,
+        a {
+          display: contents;
+          color: #009ada;
+          cursor: pointer;
+        }
+
+        @media screen and (min-width: $mobile) {
+          font-size: 16px;
+        }
+      }
+
+      .me {
+        clip-path: polygon(25% 0, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+        background: url("../img/myPhotoFromLinkedin.webp");
+        height: 250px;
+        width: 280px;
+        background-size: contain;
+      }
+
+      @media screen and (min-width: $mobile) {
+        margin: 0 50px;
+      }
+      @media screen and (min-width: $tablet) {
+        max-width: 50%;
+      }
+    }
+
+    .skills:last-child {
+      display: block;
+      margin-top: 25px;
+
+      .bars-wrap {
+        margin: 50px auto 0 auto;
+        max-width: 90%;
+        width: calc(100% - 15px);
+      }
+      .bar {
+        align-items: flex-end;
+        background-color: #eee;
+        color: #666;
+        font-size: 7pt;
+        height: 22px;
+        margin: 0 0 12px 0;
+        position: relative;
+
+        @media screen and (min-width: $mobile) {
+          font-size: 14px;
+          height: 28px;
+          margin: 0 0 15px;
+        }
+        @media screen and (min-width: $tablet) {
+          max-width: 90%;
+        }
+      }
+
+       .bar.fill {
+        @include flex;
+        left: 0;
+        position: absolute;
+        top: 0;
+        background-color: #00a1a7;
+        opacity: 1;
+        padding: 0;
+      }
+      .fill {
+        transition: 1.1s 0.2s width ease-in-out;
+      }
+      .bar .tag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        position: absolute;
+        top: 0;
+        background-color: #04c2c9;
+        color: #fff;
+        height: 100%;
+        width: 70px;
+        font-weight: 600;
+        font-size: 10px;
+
+        @media screen and (min-width: $mobile) {
+          font-size: 15px;
+          width: 110px;
+        }
+      
+      }
+
+      @media screen and (min-width: $mobile) {
+        margin-top: 50px;
+      }
+      @media screen and (min-width: $tablet) {
+        margin-top: 0;
+        
+      }
+    }
+
+    @media screen and (min-width: $tablet) {
+      flex-direction: row;
+    }
+  }
+  
+  .animated.slide-in-left {
+    animation: slideInLeft 0.75s ease both;
+  }
+  .animated.slide-in-right {
+    animation: slideInRight 0.75s ease both;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+

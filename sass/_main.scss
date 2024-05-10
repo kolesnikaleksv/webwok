@@ -8,7 +8,7 @@ body {
   section {
     @include flex;
     margin: 3rem 0;
-    line-height: 18px;
+    line-height: 24px;
     position: relative;
   }
   section:first-child {
@@ -26,4 +26,12 @@ body {
 
 .active {
   color: #e31b6d;
+}
+
+.container {
+  @include flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 10px;
+  width: 100%;
 }
