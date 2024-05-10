@@ -1,0 +1,91 @@
+.home {
+  color: #fff;
+  height: calc(100vh + 53px);
+  padding: 0 10px;
+  margin: 0;
+
+  &__canvas {
+    background: url("../../img/filler.png") center center/cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+
+    @media screen and (min-width: $tablet) {
+      background: #252934;
+    }
+  }
+
+  &__banner {
+    @include flex;
+    z-index: 1;
+  }
+
+  &__main-text {
+    font-size: 43px;
+    line-height: 48px;
+    margin-bottom: 20px;
+
+    span {
+      font-weight: 600;
+      color: #e31b6d;
+    }
+  }
+
+  &__main-button {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    border: 2px solid white;
+    padding: 0.75rem;
+    margin-bottom: 50px;
+    transition: background-color .5s ease-in-out;
+    cursor: pointer;
+    
+    span {
+      margin-left: 1rem;
+      transition: rotate .5s ease-in-out;
+
+    }
+  }
+
+  &__main-button:hover {
+    background-color: #04c2c9;
+    span {
+      rotate: 90deg;
+
+    }
+  }
+
+  &__link-wrap {
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background: #1b242f;
+    border-bottom: 3px solid #04c2c9;
+    height: 50px;
+    width: 100%;
+    z-index: 99;
+  }
+  
+  &__nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    li {
+      margin: 0 20px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+ 
+}
