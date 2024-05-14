@@ -109,6 +109,12 @@
         font-size: 21px;
       }
     }
+
+    .button:hover {
+      background-color: #04c2c9;
+      border-color: #04c2c9;
+    }
+    
     @media screen and (min-width: $mobile) {
       min-width: 500px;
     }
