@@ -17,9 +17,9 @@
 </head>
 <body>
   <div class="overflow-wrapper">
-    <section class="home">
+    <section id="home" class="home height-fix">
       <div id="pt" class="home__canvas">
-        <canvas id="canvas" width="1186" height="977" style="width: 949px; height: 782px;"></canvas>
+        <canvas id="canvas"></canvas>
       </div>
       <div class="home__banner">
         <div class="home__main-text">
@@ -27,21 +27,24 @@
           <br>
           I'm a front-end web developer.
         </div>
-        <div id="home" class="home__main-button page-link" dest="about">
+        <div class="home__main-button page-link" dest="about">
           View my work 
           <span class="material-symbols-outlined">
             arrow_forward
           </span>
         </div>
         <nav id="nav" class="home__link-wrap">
-          <ul class="home__nav flex desk">
+          <ul class="home__nav flex desk link-wrap">
               <li class="page-link active" dest="home">home</li>
               <li class="page-link" dest="about">about</li>
               <li class="page-link" dest="portfolio">portfolio</li>
-              <li class="page-link" dest="blog">blog</li>
+              <!-- <li class="page-link" dest="blog">blog</li> -->
               <li class="page-link" dest="contact">contact</li>
           </ul>
-      </nav>
+          <span class="mdi-menu material-symbols-outlined">
+            menu
+          </span>
+        </nav>
       </div>
     </section>
     <section class="about">
@@ -53,7 +56,7 @@
 
         <div class="flex row label-wrap">
             <div class="flex bullet-wrap ">
-              <div class="hex-wrap waypoint animated flip-in-x" data-animation="flip-in-x">
+              <div class="hex-wrap waypoint flip-in-x" data-animation="flip-in-x">
                 <div class="hexagon">
                   <span class="material-symbols-outlined">
                     speed
@@ -70,7 +73,7 @@
             </div>
 
             <div class="flex bullet-wrap ">
-              <div class="hex-wrap waypoint animated flip-in-x" data-animation="flip-in-x" data-delay=".2s" style="animation-delay: 0.2s;">
+              <div class="hex-wrap waypoint flip-in-x" data-animation="flip-in-x" data-delay=".2s" style="animation-delay: 0.2s;">
                 <div class="hexagon">
                   <span class="material-symbols-outlined">
                     devices
@@ -83,7 +86,7 @@
               </div>
             </div>
             <div class="flex bullet-wrap ">
-              <div class="hex-wrap waypoint animated flip-in-x" data-animation="flip-in-x" data-delay=".4s" style="animation-delay: 0.4s;">
+              <div class="hex-wrap waypoint flip-in-x" data-animation="flip-in-x" data-delay=".4s" style="animation-delay: 0.4s;">
                 <div class="hexagon">
                   <span class="material-symbols-outlined">
                     lightbulb
@@ -97,7 +100,7 @@
             </div>
 
             <div class="flex bullet-wrap ">
-              <div class="hex-wrap waypoint animated flip-in-x" data-animation="flip-in-x" data-delay=".6s" style="animation-delay: 0.6s;">
+              <div class="hex-wrap waypoint flip-in-x" data-animation="flip-in-x" data-delay=".6s" style="animation-delay: 0.6s;">
                 <div class="hexagon">
                   <span class="material-symbols-outlined">
                     rocket_launch
@@ -114,7 +117,7 @@
           </div>
         </div>
 
-        <div class="skills-wrapper flex row-gt-sm">
+        <div id="test" class="skills-wrapper flex row-gt-sm">
           <div class="skills flex flex-50-gt-sm waypoint" data-animation="slide-in-left">
             <img src="img/myPhotoFromLinkedin.webp" class="me">
             <div class="skills__label label bold">Who's this guy?</div>
@@ -130,7 +133,7 @@
             </div>
           </div>
 
-          <div class="skills flex flex-50-gt-sm waypoint bars-wrap" data-animation="slide-in-right">
+          <div class="skills flex flex-50-gt-sm waypoint bars-wraped" data-animation="slide-in-right">
             <div class="bar flex">
               <div class="bar fill" style="width:100%">
                 <div class="tag bold flex">CSS</div>
@@ -209,14 +212,14 @@
       <div class="filter-wrap waypoint" data-animation="fade-in">
         <div class="filter-list flex row">
           <div class="filter active" data-filter="all">ALL</div>
-          <div class="filter" data-filter=".rails">RUBY/RAILS</div>
+          <div class="filter" data-filter=".jquery">JQuery</div>
           <div class="filter" data-filter=".react">REACT/NEXT</div>
           <div class="filter" data-filter=".js">JAVASCRIPT</div>
         </div>
         <div class="float-bar">
           <div class="float-bar-list flex row">
             <div class="filter" data-filter="all">ALL</div>
-            <div class="filter" data-filter=".rails">RUBY/RAILS</div>
+            <div class="filter" data-filter=".jquery">jQuery</div>
             <div class="filter" data-filter=".react">REACT-JS</div>
             <div class="filter" data-filter=".js">JAVASCRIPT</div>
           </div>
@@ -268,7 +271,7 @@
           </div>
         </div>
 
-        <div class="mix rails" data-my-order="1">
+        <div class="mix jquery" data-my-order="1">
           <div>
             <div class="card"></div>
             <div class="text">
@@ -279,7 +282,7 @@
           </div>
         </div>
 
-        <div class="mix js" data-my-order="1">
+        <div class="mix js jquery" data-my-order="1">
           <div>
             <div class="card"></div>
             <div class="text">
@@ -301,7 +304,7 @@
           </div>
         </div>
 
-        <div class="mix rails" data-my-order="1">
+        <div class="mix jquery" data-my-order="1">
           <div>
             <div class="card"></div>
             <div class="text">
@@ -363,7 +366,8 @@
           method="POST" 
         >
           <input placeholder="Name" type="text" name="name" required />
-          <input type="hidden" name="access_key" value="cdde2ef6-ca0e-437a-8dc6-17434a99a38f" />
+          <!-- <input type="hidden" name="access_key" value="cdde2ef6-ca0e-437a-8dc6-17434a99a38f" /> -->
+          <input type="hidden" name="access_key" value="556c4b26-7eeb-4fdf-8408-4d038ae6a3c8" />
           <input
             placeholder="Enter email"
             type="email"
@@ -464,15 +468,16 @@
       </div>
     </footer>
   </div>
-  <script src="./js/libraries/jquery.min.js"></script>
-  <!-- <script
-    src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-    crossorigin="anonymous">
-  </script> -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script> -->
-  <!-- <script src="./js//libraries/waypoints.min.js"></script> -->
-  <script src="./js/libraries/noframework.waypoints.min.js"></script>
+  <!-- <script src="./js/libraries/jquery.min.js"></script> -->
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
+  <script src="./js/libraries/jquery.mixitup.min.js"></script>
+  <script src="./js/libraries/jquery.waypoints.min.js"></script>
+  <script src="./js/libraries/prefixfree.min.js"></script>
+  <script src="./js/modal.js"></script>
   <script src="./js/libraries/pt.min.js"></script>
   <script src="./js/index.js"></script>
   <script src="./js/canvas.js"></script>
