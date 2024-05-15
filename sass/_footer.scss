@@ -3,8 +3,8 @@
   padding: 70px 0 50px 0;
   position: relative;
 
-  .mdi-chevron-double-up {
-    background: #e31b6d;
+  .back-to-top {
+    background-color: #e31b6d;
     cursor: pointer;
     font-size: 30pt;
     height: 50px;
@@ -14,10 +14,13 @@
     position: absolute;
     right: 0;
     top: -25px;
-    transition: background 0.5s;
+    transition: background-color 0.5s;
     width: 47px;
-
     color: #fff;
+  }
+
+  .back-to-top:hover {
+    background-color: #981149;
   }
 
   .icon-wrap {
@@ -40,9 +43,24 @@
       text-align: center;
       transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
       width: 55px;
+
+      .icon-item {
+        height: 26px;
+        width: 26px;
+        font-size: 20pt;
+      }
     }
-    svg {
-      width: 40px;
+
+    .icon:hover {
+      background: #04c2c9;
+      box-shadow: 0 0 0 3px rgba(4, 94, 201, 0.1);
+      transform: scale(0.9);
+      
+      .icon-item {
+        -webkit-animation: toBottomFromTop 0.3s forwards;
+        -moz-animation: toBottomFromTop 0.3s forwards;
+        animation: toBottomFromTop 0.3s forwards;
+      }
     }
   }
 
