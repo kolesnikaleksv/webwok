@@ -1,1 +1,4 @@
-console.log('hello')
+$(function() {
+  // GALLERY
+  $('#gallery').mixItUp({});
+})
