@@ -19,13 +19,13 @@
 
   &__banner {
     @include flex;
-    z-index: 1;
   }
 
   &__main-text {
     font-size: 43px;
     line-height: 48px;
     margin-bottom: 20px;
+    z-index: 1;
 
     span {
       font-weight: 600;
@@ -42,6 +42,7 @@
     margin-bottom: 50px;
     transition: background-color .5s ease-in-out;
     cursor: pointer;
+    z-index: 1;
     
     span {
       margin-left: 1rem;
@@ -61,31 +62,66 @@
   &__link-wrap {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
     bottom: 0;
     left: 0;
     position: absolute;
     background: #1b242f;
     border-bottom: 3px solid #04c2c9;
     height: 50px;
+    text-align: left;
     width: 100%;
     z-index: 99;
-  }
-  
-  &__nav {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
 
-    li {
-      margin: 0 20px;
-      text-transform: uppercase;
-      cursor: pointer;
+    .link-wrap {
+      background: #333;
+      height: 0;
+      max-width: 1200px;
+      overflow: hidden;
+      position: absolute;
+      top: 53px;
+      transition: height 0.3s ease-out;
+      width: 100%;
+  
+       li {
+        cursor: pointer;
+        font-size: 12pt;
+        padding: 12px 20px;
+        text-transform: uppercase;
+        transition: color 0.5s;
+  
+        @media screen and (min-width: $mobile) {
+          display: inline;
+          font-size: initial;
+          margin: 0 20px;
+          padding: initial;
+        }
+      }
+      @media screen and (min-width: $mobile) {
+        background: none;
+        height: initial;
+        overflow: visible;
+        position: initial;
+        text-align: left;
+      }
+    }
+
+    .link-wrap.visible {
+      height: 220px;
+    }
+
+    span {
+      font-size: 30pt;
+      line-height: 36pt;
+      margin: auto 0;
+      position: absolute;
+      right: 5vw;
+      top: 0;
+
+      @media screen and (min-width: $mobile) {
+        display: none;
+      }
     }
   }
- 
 }
