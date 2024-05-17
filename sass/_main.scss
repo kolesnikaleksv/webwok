@@ -3,17 +3,17 @@ body {
   font-family: "Open Sans", sans-serif;
   text-align: center;
 }
+
 .overflow-wrapper {
-  overflow-x: hidden;
-  height: 100vh;
   section {
     @include flex;
-    margin: 3rem 0;
     line-height: 24px;
     position: relative;
+    padding: 100px 0 130px 0;
   }
   section:first-child {
     margin: 0;
+    overflow: hidden;
   }
 }
 
@@ -23,6 +23,18 @@ body {
   'wght' 400,
   'GRAD' 0,
   'opsz' 24
+}
+
+.home nav.fixed {
+  bottom: inherit;
+  left: 0;
+  position: fixed;
+  top: 0;
+  animation: popDown 0.5s;
+}
+
+.desc {
+  animation: popDown 0.5s;
 }
 
 .active {
@@ -59,4 +71,18 @@ body {
   @media screen and (min-width: $tablet) {
     margin: 25px 0 100px 0;
   }
+}
+
+@keyframes popDown {
+  0% {
+    transform: translateY(-100px);
+  }
+}
+
+.waypoint {
+  opacity: 0;
+}
+
+nav .link-wrap.visible {
+  height: 220px;
 }
