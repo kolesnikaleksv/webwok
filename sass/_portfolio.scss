@@ -79,7 +79,7 @@
     margin: 20px 0;
 
     .mix {
-      // display: none;
+      display: none;
       position: relative;
 
       .card {
@@ -102,7 +102,7 @@
       .text,
       .button {
         color: #1b242f;
-        // opacity: 0;
+        opacity: 0;
         text-align: center;
         transition: all 0.3s ease-in-out;
         z-index: 2;
@@ -147,6 +147,21 @@
         color: #fff;
       }
     }
+    
+    .mix:hover .card {
+      opacity: 0;
+    }
+
+    .mix:hover .text {
+      cursor: default;
+      opacity: 1;
+      top: 24%;
+    }
+    
+    .mix:hover .button {
+      bottom: 24%;
+      opacity: 1;
+    }
 
     .mix:nth-child(6) .card {
       background: url("http://findmatthew.com/style/../img/thumb-6.jpg") center center/cover;
@@ -165,13 +180,3 @@
     }
   }
 }
-
-.animated.fade-in {
-  animation: fadeIn 0.75s ease both;
-}
-
- @keyframes fadeIn {
-  100% {
-    opacity: 1;
-  }
- }
