@@ -17,13 +17,47 @@
 </head>
 <body>
   <div class="overflow-wrapper">
+    <div class="modal-wrap flex">
+      <div class="mask"></div>
+      <div class="modal" id="modal">
+        <div class="carousel-wrap">
+          <div class="window">
+            <div id="carousel">
+              <div class="slide"></div>
+              <div class="slide"></div>
+              <div class="slide"></div>
+            </div>
+            <span class="mdi mdi-chevron-left material-symbols-outlined" id="prev">
+              keyboard_arrow_left
+            </span>
+            <span class="mdi mdi-chevron-right material-symbols-outlined" id="next">
+              keyboard_arrow_right
+            </span>
+          </div>
+        </div>
+        <div class="info-box">
+          <div class="title"></div>
+          <div class="tag"></div>
+          <div class="detail"></div>
+          <a href="#" target="_blank"
+            ><div class="button">
+              <span class="mdi mdi-open-in-new material-symbols-outlined">
+                open_in_new
+              </span>VIEW SITE
+            </div></a
+          >
+        </div>
+        <span class="close mdi mdi-close material-symbols-outlined">
+          close</span>
+      </div>
+    </div>
     <section id="home" class="home height-fix">
       <div id="pt" class="home__canvas">
         <canvas id="canvas"></canvas>
       </div>
       <div class="home__banner">
         <div class="home__main-text">
-          Hello, I'm <span class="highlight">Kolisnyk Oleksandr</span>.
+          Hello, I'm <span class="highlight">Oleksandr Kolisnyk</span>.
           <br>
           I'm a front-end web developer.
         </div>
@@ -56,7 +90,7 @@
 
         <div class="flex row label-wrap">
             <div class="flex bullet-wrap ">
-              <div class="hex-wrap waypoint flip-in-x" data-animation="flip-in-x">
+              <div class="hex-wrap waypoint" data-animation="flip-in-x">
                 <div class="hexagon">
                   <span class="material-symbols-outlined">
                     speed
@@ -73,7 +107,7 @@
             </div>
 
             <div class="flex bullet-wrap ">
-              <div class="hex-wrap waypoint flip-in-x" data-animation="flip-in-x" data-delay=".2s" style="animation-delay: 0.2s;">
+              <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".2s" style="animation-delay: 0.2s;">
                 <div class="hexagon">
                   <span class="material-symbols-outlined">
                     devices
@@ -86,7 +120,7 @@
               </div>
             </div>
             <div class="flex bullet-wrap ">
-              <div class="hex-wrap waypoint flip-in-x" data-animation="flip-in-x" data-delay=".4s" style="animation-delay: 0.4s;">
+              <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".4s" style="animation-delay: 0.4s;">
                 <div class="hexagon">
                   <span class="material-symbols-outlined">
                     lightbulb
@@ -100,7 +134,7 @@
             </div>
 
             <div class="flex bullet-wrap ">
-              <div class="hex-wrap waypoint flip-in-x" data-animation="flip-in-x" data-delay=".6s" style="animation-delay: 0.6s;">
+              <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".6s" style="animation-delay: 0.6s;">
                 <div class="hexagon">
                   <span class="material-symbols-outlined">
                     rocket_launch
@@ -123,8 +157,8 @@
             <div class="skills__label label bold">Who's this guy?</div>
             <div class="skills__description">
               I'm a Front-End Developer for
-              <a class="highlight" href="http://www.chownow.com" target="_blank">ChowNow</a>
-              in Los Angeles, CA.
+              <a class="highlight" href="http://www.chownow.com" target="_blank">WWOK</a>
+              in Ukraine.
               <br>
               I have serious passion for UI effects, animations and creating
               intuitive, dynamic user experiences.
@@ -148,7 +182,7 @@
 
             <div class="bar flex">
               <div class="bar fill" style="width:90%">
-                <div class="tag bold flex">React</div>
+                <div class="tag bold flex">TailwindCSS</div>
               </div>
             </div>
 
@@ -160,37 +194,37 @@
 
             <div class="bar flex">
               <div class="bar fill" style="width:90%">
+                <div class="tag bold flex">jQuery</div>
+              </div>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:80%">
+                <div class="tag bold flex">React</div>
+              </div>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:80%">
+                <div class="tag bold flex">TypeScript</div>
+              </div>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:65%">
                 <div class="tag bold flex">NextJS</div>
               </div>
             </div>
 
             <div class="bar flex">
               <div class="bar fill" style="width:65%">
+                <div class="tag bold flex">VUE</div>
+              </div>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:50%">
                 <div class="tag bold flex">Node.js</div>
-              </div>
-            </div>
-
-            <div class="bar flex">
-              <div class="bar fill" style="width:65%">
-                <div class="tag bold flex">Ruby/Rails</div>
-              </div>
-            </div>
-
-            <div class="bar flex">
-              <div class="bar fill" style="width:50%">
-                <div class="tag bold flex">Python</div>
-              </div>
-            </div>
-
-            <div class="bar flex">
-              <div class="bar fill" style="width:50%">
-                <div class="tag bold flex">Figma</div>
-              </div>
-            </div>
-
-            <div class="bar flex">
-              <div class="bar fill" style="width:50%">
-                <div class="tag bold flex">Illustrator</div>
               </div>
             </div>
           </div>
@@ -212,7 +246,7 @@
       <div class="filter-wrap waypoint" data-animation="fade-in">
         <div class="filter-list flex row">
           <div class="filter active" data-filter="all">ALL</div>
-          <div class="filter" data-filter=".jquery">JQuery</div>
+          <div class="filter" data-filter=".jquery">jQuery</div>
           <div class="filter" data-filter=".react">REACT/NEXT</div>
           <div class="filter" data-filter=".js">JAVASCRIPT</div>
         </div>
@@ -220,7 +254,7 @@
           <div class="float-bar-list flex row">
             <div class="filter" data-filter="all">ALL</div>
             <div class="filter" data-filter=".jquery">jQuery</div>
-            <div class="filter" data-filter=".react">REACT-JS</div>
+            <div class="filter" data-filter=".react">REACT/NEXT</div>
             <div class="filter" data-filter=".js">JAVASCRIPT</div>
           </div>
         </div>
@@ -462,20 +496,17 @@
       </div>
       <div class="info-box">
         <div class="footnote">
-          Kolisnyk Oleksandr <span class="highlight">&copy;2021</span>
+          Oleksandr Kolisnyk <span class="highlight">&copy;2021</span>
         </div>
       </div>
     </footer>
   </div>
-  <!-- <script src="./js/libraries/jquery.min.js"></script> -->
   <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
   crossorigin="anonymous"></script>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
   <script src="./js/libraries/jquery.mixitup.min.js"></script>
   <script src="./js/libraries/jquery.waypoints.min.js"></script>
-  <script src="./js/libraries/prefixfree.min.js"></script>
   <script src="./js/modal.js"></script>
   <script src="./js/libraries/pt.min.js"></script>
   <script src="./js/index.js"></script>
