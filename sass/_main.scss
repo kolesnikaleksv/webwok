@@ -83,6 +83,15 @@ body {
   opacity: 0;
 }
 
-nav .link-wrap.visible {
-  height: 220px;
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #525B73;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #1e242c;
+  border-radius: 20px;
 }
