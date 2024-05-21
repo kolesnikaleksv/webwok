@@ -37,7 +37,7 @@
       cursor: pointer;
       font-size: 18pt;
       height: 55px;
-      margin: 0 15px;
+      margin: 0 10px;
       overflow: hidden;
       position: relative;
       text-align: center;
@@ -48,6 +48,9 @@
         height: 26px;
         width: 26px;
         font-size: 20pt;
+      }
+      @media screen and (min-width: $mobile) {
+        margin: 0 15px;
       }
     }
 
