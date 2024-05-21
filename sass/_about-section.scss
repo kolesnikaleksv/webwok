@@ -118,8 +118,7 @@
 
       .me {
         clip-path: polygon(25% 0, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-        // background: url("../img/myPhotoFromLinkedin.webp");
-        background: url("../../img/myPhotoFromLinkedin.webp");
+        background: url("../../img/myPhotoFromLinkedin.webp") center center/cover;
         height: 250px;
         width: 280px;
         background-size: contain;
