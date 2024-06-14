@@ -30,9 +30,11 @@ body {
   left: 0;
   position: fixed;
   top: 0;
-  animation: popDown 0.5s;
 }
 
+nav.fixed.desk {
+  animation: popDown 0.5s;
+}
 .desc {
   animation: popDown 0.5s;
 }

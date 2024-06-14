@@ -29,6 +29,13 @@ $(document).ready(function() {
         'ChowNow is a commission-free online ordering system and food ordering app helping restaurants feed their hungry customers.',
       link: 'https://www.acko-ukraine.com.ua/'
     },
+    irvas: {
+      title: 'irvas',
+      tag: 'WHITE-LABEL ONLINE ORDERING SOLUTION.',
+      detail:
+        'ChowNow is a commission-free online ordering system and food ordering app helping restaurants feed their hungry customers.',
+      link: 'http://irvas.webwizardok.com/'
+    },
     uber: {
       title: 'Uber taxi',
       tag: 'WHITE-LABEL ONLINE ORDERING SOLUTION.',
