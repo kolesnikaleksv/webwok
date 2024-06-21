@@ -6,21 +6,28 @@ $(document).ready(function() {
       tag: 'FOOD ORDERING PLATFORM.',
       detail:
         'ChowNow Discover is a platform that lets customers discover new local restaurants and provides business owners with tools to convert first time orders into lifelong diners.',
-      link: 'http://pulse.webwizardok.com/'
+      link: 'https://pulse.webwizardok.com/'
     },
     food: {
       title: 'Healhe food',
       tag: 'FOOD ORDERING PLATFORM.',
       detail:
         'ChowNow Discover is a platform that lets customers discover new local restaurants and provides business owners with tools to convert first time orders into lifelong diners.',
-      link: 'http://food.webwizardok.com/'
+      link: 'https://food.webwizardok.com/'
     },
     marvel: {
       title: 'Marvel comics',
       tag: 'FOOD ORDERING PLATFORM.',
       detail:
         'ChowNow Discover is a platform that lets customers discover new local restaurants and provides business owners with tools to convert first time orders into lifelong diners.',
-      link: 'http://marvel.webwizardok.com/'
+      link: 'https://marvel.webwizardok.com/'
+    },
+    childhood: {
+      title: 'Childhood',
+      tag: 'All for children',
+      detail:
+        'ChowNow Discover is a platform that lets customers discover new local restaurants and provides business owners with tools to convert first time orders into lifelong diners.',
+      link: 'https://childhood.webwizardok.com/'
     },
     acko: {
       title: 'ACKO-Ukraine',
@@ -34,21 +41,21 @@ $(document).ready(function() {
       tag: 'WHITE-LABEL ONLINE ORDERING SOLUTION.',
       detail:
         'ChowNow is a commission-free online ordering system and food ordering app helping restaurants feed their hungry customers.',
-      link: 'http://irvas.webwizardok.com/'
+      link: 'https://irvas.webwizardok.com/'
     },
     uber: {
       title: 'Uber taxi',
       tag: 'WHITE-LABEL ONLINE ORDERING SOLUTION.',
       detail:
         'ChowNow is a commission-free online ordering system and food ordering app helping restaurants feed their hungry customers.',
-      link: 'http://uber.webwizardok.com/'
+      link: 'https://ruber.webwizardok.com/'
     },
     ordering: {
       title: 'ChowNow Ordering Web',
       tag: 'WHITE-LABEL ONLINE ORDERING SOLUTION.',
       detail:
         'ChowNow is a commission-free online ordering system and food ordering app helping restaurants feed their hungry customers.',
-      link: 'http://food.webwizardok.com/'
+      link: 'https://food.webwizardok.com/'
     },
     newrelic: {
       title: 'NewRelic.com',
